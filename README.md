@@ -11,7 +11,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### Links
 
 - Solution URL: [Code](https://github.com/bryancarias/SocialLinksProfileMain)
-- Live Site URL: [Demo](https://blog-preview-card-main-delta-lemon.vercel.app/)
+- Live Site URL: [Demo](https://social-links-profile-main-ten-zeta.vercel.app/)
 
 ## Author
 
