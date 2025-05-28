@@ -1,0 +1,136 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/inter-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/inter-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%,73%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+}
+
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background-color: var(--grey900);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1,p {
+    margin: 0;
+}
+
+.card {
+    background-color: var(--grey800);
+    padding: 24px;
+    width: clamp(327px, 90%, 384px);
+    border-radius: 16px;
+}
+
+.card-avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-avatar_img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card-avatar_title {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 16px;
+    line-height: 150%;
+}
+
+.card-avatar_direct {
+    color: var(--green);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.card-links_description {
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.card-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.card-links .card-links_item  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--grey700);
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card-links .card-links_item:hover {
+    background-color: var(--green);
+    color: var(--grey900);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    display: none;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+  
